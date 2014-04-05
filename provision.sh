@@ -17,6 +17,7 @@ echo deb http://dl.hhvm.com/ubuntu precise main | sudo tee /etc/apt/sources.list
 sudo apt-get update -y
 sudo apt-get install -y hhvm
 sudo mkdir -p /var/run/hhvm
+sudo ln -f -s /vagrant/config/server.ini /etc/hhvm/server.ini
 sudo service hhvm restart
 
 echo
